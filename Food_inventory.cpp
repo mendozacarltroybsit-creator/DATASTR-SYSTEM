@@ -133,7 +133,7 @@ public:
     void listAll() {
         cout << "\n--- Inventory ---\n";
         for(auto& item : items) {
-            cout << item.id << " " << item.name << " " << item.quantity << " @$" << item->price;
+            cout << item.id << " " << item.name << " " << item.quantity << " @$" << item.price;
             if(item.quantity < 5) cout << " [LOW]";
             cout << endl;
         }
